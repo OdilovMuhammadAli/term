@@ -35,14 +35,12 @@ a {
   padding: 0 20px;
 }
 
-/* Оранжевая линия (в шапке, может быть ещё где-то) */
 .orange-line {
   width: 80px;
   height: 3px;
   background: #ff7500;
 }
 
-/* Оранжевая кнопка */
 .orange-buttom {
   background: #ff7500;
   color: #fff;
@@ -61,7 +59,6 @@ a {
   transform: scale(1.05);
 }
 
-/* Хедер */
 .Header {
   position: sticky;
   top: 0;
