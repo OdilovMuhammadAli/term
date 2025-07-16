@@ -169,13 +169,6 @@ a {
   transform: translateY(40px);
 }
 
-@keyframes flyUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* WHY*/
 .why {
   padding: 240px 0 300px;
@@ -311,7 +304,13 @@ a {
     gap: 40px;
   }
 
-  .hero-img,
+  .hero-img {
+    position: static;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
   .cta-img {
     position: static;
     width: 100%;
@@ -376,27 +375,6 @@ a {
   .navbar-links li {
     opacity: 0;
     transform: translateY(-10px);
-    animation: none;
-  }
-
-  #check:checked ~ .navbar .navbar-links li {
-    animation: fadeInLink 0.4s ease forwards;
-  }
-
-  #check:checked ~ .navbar .navbar-links li:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-
-  #check:checked ~ .navbar .navbar-links li:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  #check:checked ~ .navbar .navbar-links li:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-
-  #check:checked ~ .navbar .navbar-links li:nth-child(4) {
-    animation-delay: 0.4s;
   }
 }
 
@@ -424,16 +402,5 @@ a {
 
   .card-title {
     font-size: 20px;
-  }
-}
-
-@keyframes fadeInLink {
-  0% {
-    transform: translateY(-10px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
